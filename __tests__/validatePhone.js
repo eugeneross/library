@@ -1,4 +1,4 @@
-import validatePhone from "../lib/validatePhone";
+import Button from "../lib/Button";
 
 describe("validatePhone", () => {
   it("should return true for a valid phone number", () => {
