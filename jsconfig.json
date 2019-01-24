@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "typescript-styled-plugin",
+        "tags": ["styled", "css", "sty", "is", "isNot", "isOr", "isSomeNot"]
+      }
+    ]
+  },
+  "exclude": ["node_modules"],
+  "include": ["lib/**/*"]
+}

@@ -3,7 +3,16 @@ module.exports = function(api) {
 
   const presets = ["@babel/preset-env", "@babel/preset-react"];
 
-  const plugins = ["babel-plugin-styled-components"];
+  const plugins = [
+    [
+      "babel-plugin-styled-components",
+      {
+        ssr: true,
+        displayName: true,
+        preprocess: false
+      }
+    ]
+  ];
 
   return {
     presets,

@@ -8,3 +8,4 @@ __tests__
 *yarn-error.log
 coverage
 lib
+node_modules
