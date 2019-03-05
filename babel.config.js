@@ -8,10 +8,11 @@ module.exports = function(api) {
       "babel-plugin-styled-components",
       {
         ssr: true,
-        displayName: true,
-        preprocess: false
+        displayName: true
       }
-    ]
+    ],
+    ["@babel/plugin-proposal-export-default-from"],
+    ["@babel/plugin-proposal-object-rest-spread"]
   ];
 
   return {
