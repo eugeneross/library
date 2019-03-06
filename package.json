@@ -1,6 +1,6 @@
 {
   "name": "numie-lib",
-  "version": "0.1.02",
+  "version": "0.1.03",
   "description": "library example",
   "main": "build/index.js",
   "directories": {
@@ -9,15 +9,10 @@
   "scripts": {
     "build": "babel lib -d build",
     "build:watch": "babel lib -w -d build",
-    "lint": "eslint lib/** test/**",
-    "lint:watch": "esw -w lib/** test/**",
+    "lint": "eslint lib/**",
+    "lint:watch": "esw -w lib/**",
     "precommit": "lint-staged",
-    "review": "run-s lint test:clean test test:coverage:report",
-    "test": "jest",
-    "test:clean": "rimraf ./coverage",
-    "test:watch": "jest --watch",
-    "test:watchAll": "jest --watchAll",
-    "test:coverage:report": "open ./coverage/lcov-report/index.html",
+    "review": "run-s lint",
     "copy": "pwd|pbcopy && pwd"
   },
   "author": "",
