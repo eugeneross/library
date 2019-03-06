@@ -53,9 +53,8 @@
     "keyword-spacing": "warn",
     "new-parens": "warn",
     "quotes": [
-      2,
-      "single",
-      "avoid-escape"
+      "error",
+      "single"
     ],
     "no-array-constructor": "warn",
     "no-caller": "warn",
