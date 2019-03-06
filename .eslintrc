@@ -36,7 +36,10 @@
   "rules": {
     "array-callback-return": "warn",
     "camelcase": "warn",
-    "curly": "warn",
+    "curly": [
+      2,
+      "multi-line"
+    ],
     "default-case": ["warn", 
       { 
         "commentPattern": "^no default$" 
@@ -49,6 +52,11 @@
     "guard-for-in": "warn",
     "keyword-spacing": "warn",
     "new-parens": "warn",
+    "quotes": [
+      2,
+      "single",
+      "avoid-escape"
+    ],
     "no-array-constructor": "warn",
     "no-caller": "warn",
     "no-cond-assign": ["warn", "always"],
