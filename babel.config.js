@@ -1,9 +1,24 @@
 module.exports = function(api) {
-  const apiChoice = api.cache.never();
+  api.cache.never();
 
   const presets = ["@babel/preset-env", "@babel/preset-react"];
 
   const plugins = [
+    [
+      "module-resolver",
+      {
+        root: ["."],
+        alias: {
+          styles: "./styles",
+          "@containers": "./containers",
+          "@components": "./components",
+          "@elements": "./elements",
+          "@blocks": "./blocks",
+          "@utils": "./utils"
+        },
+        cwd: "."
+      }
+    ],
     [
       "babel-plugin-styled-components",
       {
